@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.arif.factoryinventory.SalesManager">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Sales Entry"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView19"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/salesIDText"
+        android:layout_alignBottom="@+id/salesIDText"
+        android:layout_alignLeft="@+id/textView24"
+        android:layout_alignStart="@+id/textView24" />
+
+    <EditText
+        android:id="@+id/salesNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView20"
+        android:layout_alignBottom="@+id/textView20"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/salesPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/salesIDText"
+        android:layout_alignStart="@+id/salesIDText"
+        android:layout_below="@+id/salesIDText"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/salesCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/salesPriceText"
+        android:layout_alignLeft="@+id/salesPriceText"
+        android:layout_alignStart="@+id/salesPriceText" />
+
+    <EditText
+        android:id="@+id/salesIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/salesNameText"
+        android:layout_alignLeft="@+id/salesNameText"
+        android:layout_alignStart="@+id/salesNameText"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/salesPriceText"
+        android:layout_alignBottom="@+id/salesPriceText"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Count"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:layout_above="@+id/salesSave"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20" />
+
+    <Button
+        android:id="@+id/salesSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorAccent"
+        android:text="SAVE"
+        android:layout_below="@+id/salesCountText"
+        android:layout_alignRight="@+id/textView19"
+        android:layout_alignEnd="@+id/textView19" />
+</android.widget.RelativeLayout>
