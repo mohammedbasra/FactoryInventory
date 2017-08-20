@@ -3,7 +3,7 @@ package com.example.arif.factoryinventory;
 import com.orm.SugarRecord;
 
 /**
- * Created by Arif on 5/4/2017.
+ * Created by Mohammed on 5/4/2017.
  */
 
 public class Product extends SugarRecord{
